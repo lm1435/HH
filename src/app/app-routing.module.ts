@@ -1,10 +1,15 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-const routes: Routes = [];
+import { CropiqComponent } from './cropiq/cropiq.component';
+
+const routes: Routes = [
+  { path: 'cropiq', component: CropiqComponent },
+  { path: '', redirectTo: '/cropiq', pathMatch: 'full' },
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}
