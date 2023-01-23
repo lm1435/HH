@@ -5,7 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './../app.component';
 import { NzLayoutModule } from 'ng-zorro-antd/layout';
 import { NzMenuModule } from 'ng-zorro-antd/menu';
-import { CropiqModule } from './cropiq.module';
+import { SampleModule } from './sample.module';
 
 @NgModule({
   declarations: [AppComponent],
@@ -14,7 +14,7 @@ import { CropiqModule } from './cropiq.module';
     AppRoutingModule,
     NzLayoutModule,
     NzMenuModule,
-    CropiqModule,
+    SampleModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
